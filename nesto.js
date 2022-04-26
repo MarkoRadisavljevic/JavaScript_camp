@@ -1,1 +1,3 @@
-console.log("hello world")
+// + , - , * , / , ++ , -- , ** , % ;
+// = , == , != , && , || , += ,-= , *= , /= ;
+// number , string , bulean , null , undefined ; 
