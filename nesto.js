@@ -19,22 +19,72 @@
 // console.log("nakon bloka");
 
     //ISTI ONAJ DOMACI SAMO SA     
-tmp_dan = 2;
-tmp_mesec = 2;
-tmp_godine = 2022;
-godine = 1995;
-mesec = 7;
-dan = 4;
-if (dan <= tmp_dan) {
-    console.log("Imam", tmp_dan - dan ,"dana");
-} else {
-    mesec -= 1;
-    console.log("Imam", tmp_dan + 30 - dan ,"dana");
+// tmp_dan = 2;
+// tmp_mesec = 2;
+// tmp_godine = 2022;
+// godine = 1995;
+// mesec = 7;
+// dan = 4;
+// if (dan <= tmp_dan) {
+//     console.log("Imam", tmp_dan - dan ,"dana");
+// } else {
+//     mesec -= 1;
+//     console.log("Imam", tmp_dan + 30 - dan ,"dana");
+// }
+// if (mesec <= tmp_mesec) {
+//     console.log("Imam", tmp_mesec - mesec ,"meseci");
+// }else {
+//     tmp_godine -= 1;
+//     console.log("Imam", tmp_mesec + 12 - mesec ,"meseci");
+// }
+// console.log("Imam", tmp_godine - godine ,"godina");
+
+
+u = Number(prompt("unesite broj zadataka (12,13,14)"));
+switch (u){
+    case 12:
+        a = Number(prompt("unesite stranicu a"));
+        b = Number(prompt("unesite stranicu b"));
+        c = Number(prompt("unesite stranicu c"));
+        if ((a>0 & b>0 &c>0) & (a<b+c & b<a+c & c<a+b)){
+            if(a==b & b==c){
+                console.log("trougao sa ovim sranicama postoji i jednakostranicnog je tipa");
+            }
+            else if (a**2 + b**2 === c**2 | b**2 + c**2 === a**2 | c**2 + a**2 === b**2){
+                console.log("trougao sa ovim tranicama postoji i prevouglog je tipa");
+            }
+            else if (a!==b!==c){
+                console.log("trougao sa ovim stranicama postoji i raznostranicnog je tipa");
+            }
+
+        }
+        else {
+            console.log("trougao sa voim stranicama ne postoji");
+        }
+        break;
+    case 13:
+        m = Number(prompt("unesite broj ucenika"));
+        n = Number(prompt("unesite svakog kojeg ucenika ucitelj ispituje"));
+        for (let i=n;i<=m;i+=n){
+            console.log("ucitelj ce pitati ucenika pod rednim ntojem",i);
+        }
+        break;
+    case 14:
+        n = Number(prompt("unesite broj ucenika"));
+        visina = [];
+        min = Infinity;
+        max = null;
+        for (i = 0 ; i < n ; i++){
+            v = Number(prompt("unesite visinu ucenika pod rednim brojem",i));
+            visina.push(v);
+            if (visina[i]>max){
+                max = visina[i];
+            }
+            if (visina[i]<min){
+                min = visina[i];
+            }
+        }
+        console.log("najveca visina je",max,"cm");
+        console.log("najmanja visina je",min,"cm");
+        break;
 }
-if (mesec <= tmp_mesec) {
-    console.log("Imam", tmp_mesec - mesec ,"meseci");
-}else {
-    tmp_godine -= 1;
-    console.log("Imam", tmp_mesec + 12 - mesec ,"meseci");
-}
-console.log("Imam", tmp_godine - godine ,"godina");
