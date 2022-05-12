@@ -105,53 +105,59 @@
 //     console.log(a);
 // }
 
-// ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
-// 1
-// 12
-// 123
-// 1234
-// n = Number(prompt("unesite broj redova"));
-// a = "";
-// for (i=1;i<=n;i++){
-//     a += String(i);
-//     console.log(a);
-// }
 
-
-
-// ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
-// 1
-// 22
-// 333
-// 4444
-// n = Number(prompt("unesite broj redova"));
-// a = "";
-// for (i=1;i<=n;i++){
-//     for (j=1;j<=i;j++){
-//         a += String(i);
-//     }
-//     console.log(a);
-//     a = "";
-// }
-
-// ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
-//          1
-//         2 3
-//        4 5 6
-//       7 8 9 10
-n = Number(prompt("unesite broj redova"));
-a = "";
-k=1;
-for (i=1;i<=n;i++){
-    for (j=1;j<=n;j++){
-        if (i+j<=n){
-            a += " ";
+// DOMACI 2
+m = Number(prompt("uneiste broj zadataka koji je bio za domaci (1,2,3)"));
+switch(m){
+    case 1:
+        // ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
+        // 1
+        // 12
+        // 123
+        // 1234
+        n = Number(prompt("unesite broj redova"));
+        a = "";
+        for (i=1;i<=n;i++){
+            a += String(i);
+            console.log(a);
         }
-        else {
-            a += String(k)+" ";
-            k++;
+        break;
+    case 2:
+        // ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
+        // 1
+        // 22
+        // 333
+        // 4444
+        n = Number(prompt("unesite broj redova"));
+        a = "";
+        for (i=1;i<=n;i++){
+            for (j=1;j<=i;j++){
+                a += String(i);
+            }
+            console.log(a);
+            a = "";
         }
-    }
-    console.log(a);
-    a = "";
+        break;
+    case 3:
+        // ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
+        //          1
+        //         2 3
+        //        4 5 6
+        //       7 8 9 10
+        n = Number(prompt("unesite broj redova"));
+        a = "";
+        k=1;
+        for (i=1;i<=n;i++){
+            for (j=1;j<=n;j++){
+                if (i+j<=n){
+                    a += " ";
+                }
+                else {
+                    a += String(k)+" ";
+                    k++;
+                }
+            }
+            console.log(a);
+            a = "";
+        }
 }
