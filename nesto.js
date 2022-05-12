@@ -40,51 +40,69 @@
 // console.log("Imam", tmp_godine - godine ,"godina");
 
 
-u = Number(prompt("unesite broj zadataka (12,13,14)"));
-switch (u){
-    case 12:
-        a = Number(prompt("unesite stranicu a"));
-        b = Number(prompt("unesite stranicu b"));
-        c = Number(prompt("unesite stranicu c"));
-        if ((a>0 & b>0 &c>0) & (a<b+c & b<a+c & c<a+b)){
-            if(a==b & b==c){
-                console.log("trougao sa ovim sranicama postoji i jednakostranicnog je tipa");
-            }
-            else if (a**2 + b**2 === c**2 | b**2 + c**2 === a**2 | c**2 + a**2 === b**2){
-                console.log("trougao sa ovim tranicama postoji i prevouglog je tipa");
-            }
-            else if (a!==b!==c){
-                console.log("trougao sa ovim stranicama postoji i raznostranicnog je tipa");
-            }
+// u = Number(prompt("unesite broj zadataka (12,13,14)"));
+// switch (u){
+//     case 12:
+//         a = Number(prompt("unesite stranicu a"));
+//         b = Number(prompt("unesite stranicu b"));
+//         c = Number(prompt("unesite stranicu c"));
+//         if ((a>0 & b>0 &c>0) & (a<b+c & b<a+c & c<a+b)){
+//             if(a==b & b==c){
+//                 console.log("trougao sa ovim sranicama postoji i jednakostranicnog je tipa");
+//             }
+//             else if (a**2 + b**2 === c**2 | b**2 + c**2 === a**2 | c**2 + a**2 === b**2){
+//                 console.log("trougao sa ovim tranicama postoji i prevouglog je tipa");
+//             }
+//             else if (a!==b!==c){
+//                 console.log("trougao sa ovim stranicama postoji i raznostranicnog je tipa");
+//             }
 
-        }
-        else {
-            console.log("trougao sa voim stranicama ne postoji");
-        }
-        break;
-    case 13:
-        m = Number(prompt("unesite broj ucenika"));
-        n = Number(prompt("unesite svakog kojeg ucenika ucitelj ispituje"));
-        for (let i=n;i<=m;i+=n){
-            console.log("ucitelj ce pitati ucenika pod rednim ntojem",i);
-        }
-        break;
-    case 14:
-        n = Number(prompt("unesite broj ucenika"));
-        visina = [];
-        min = Infinity;
-        max = null;
-        for (i = 0 ; i < n ; i++){
-            v = Number(prompt("unesite visinu ucenika pod rednim brojem",i));
-            visina.push(v);
-            if (visina[i]>max){
-                max = visina[i];
-            }
-            if (visina[i]<min){
-                min = visina[i];
-            }
-        }
-        console.log("najveca visina je",max,"cm");
-        console.log("najmanja visina je",min,"cm");
-        break;
-}
+//         }
+//         else {
+//             console.log("trougao sa voim stranicama ne postoji");
+//         }
+//         break;
+//     case 13:
+//         m = Number(prompt("unesite broj ucenika"));
+//         n = Number(prompt("unesite svakog kojeg ucenika ucitelj ispituje"));
+//         for (let i=n;i<=m;i+=n){
+//             console.log("ucitelj ce pitati ucenika pod rednim ntojem",i);
+//         }
+//         break;
+//     case 14:
+//         n = Number(prompt("unesite broj ucenika"));
+//         visina = [];
+//         min = Infinity;
+//         max = null;
+//         for (i = 0 ; i < n ; i++){
+//             v = Number(prompt("unesite visinu ucenika pod rednim brojem",i));
+//             visina.push(v);
+//             if (visina[i]>max){
+//                 max = visina[i];
+//             }
+//             if (visina[i]<min){
+//                 min = visina[i];
+//             }
+//         }
+//         console.log("najveca visina je",max,"cm");
+//         console.log("najmanja visina je",min,"cm");
+//         break;
+// }
+
+// n = Number(prompt("unesite koliko zelite brojeva da unesete"));
+// zbir = 0;
+// for (i=0;i<n;i++){
+//     zbir += Number(prompt("unesite brojeve"));
+// }
+// console.log("zbir brojeva je:",zbir);
+// console.log("aritmeticka sredina je",zbir/n);
+
+// n=Number(prompt("unesite broj")); for (i=1;i<n;i+=2){console.log(i);};
+// n = Number(prompt("unesite broj stranice trougla"));
+// a= ""
+// for (i=0;i<n;i++){
+//     a += "*";
+//     console.log(a);
+// }
+
+
