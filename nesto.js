@@ -105,4 +105,31 @@
 //     console.log(a);
 // }
 
+// ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
+// 1
+// 12
+// 123
+// 1234
+// n = Number(prompt("unesite broj redova"));
+// a = "";
+// for (i=1;i<=n;i++){
+//     a += String(i);
+//     console.log(a);
+// }
 
+
+
+// ZADATAK JE DA SE ISPISE TROUGAO NALIK OVOM:
+// 1
+// 22
+// 333
+// 4444
+// n = Number(prompt("unesite broj redova"));
+// a = "";
+// for (i=1;i<=n;i++){
+//     for (j=1;j<=i;j++){
+//         a += String(i);
+//     }
+//     console.log(a);
+//     a = "";
+// }
