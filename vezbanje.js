@@ -109,20 +109,29 @@
 // console.log(sum);
 
 
-n = 100;
+// broj = 0;
+// while (broj<100){
+//     broj++;
+//     if (broj%3 ==0 && broj%5==0){
+//         console.log("fizzbazz");
+//     }
+//     else if (broj % 3 ==0){
+//         console.log("fizz");
+//     }
+//     else if (broj % 5 == 0 ){
+//         console.log("bazz"); 
+//     }
+//     else {
+//         console.log(broj);
+//     }
+// }
+
+
+n = Number(prompt("unesite broj redova"));
 broj = 0;
-while (broj!=n){
+a="";
+while (broj<n){
+    a+="*";
+    console.log(a);
     broj++;
-    if (broj%3 ==0 && broj%5==0){
-        console.log("fizzbazz");
-    }
-    else if (broj % 3 ==0){
-        console.log("fizz");
-    }
-    else if (broj % 5 == 0 ){
-        console.log("bazz"); 
-    }
-    else {
-        console.log(broj);
-    }
 }
