@@ -172,3 +172,102 @@
 //     unos = Number(prompt("pogresna sifra pokusaj ponovo"))
 // }
 // console.log("uneli ste tacnu sifru");
+
+// // n = Number(prompt("unesite broj"));
+// // k = 0;
+// // broj =0;
+// // while (k!=n){
+// //     if (broj % 2 === 1){
+// //         console.log(broj);
+// //         k++;
+// //     }
+// //     broj++;
+// // }
+
+// // n = 0;
+// // sum = 0;
+// // while(n<10){
+// //     n++;
+// //     sum += n;
+// // } 
+// // console.log(sum);
+
+
+// // broj = 0;
+// // while (broj<100){
+// //     broj++;
+// //     if (broj%3 ==0 && broj%5==0){
+// //         console.log("fizzbazz");
+// //     }
+// //     else if (broj % 3 ==0){
+// //         console.log("fizz");
+// //     }
+// //     else if (broj % 5 == 0 ){
+// //         console.log("bazz"); 
+// //     }
+// //     else {
+// //         console.log(broj);
+// //     }
+// // }
+
+
+// n = Number(prompt("unesite broj redova"));
+// broj = 0;
+// a="";
+// while (broj<n){
+//     a+="*";
+//     console.log(a);
+//     broj++;
+// }
+
+// DOMACI 3
+
+m = Number(prompt("unesite broj zadatka"));
+switch(m){
+    case 1:
+        number = Number(prompt("unesite broj"));
+        sum = 0;
+        while (number>0){
+            sum += number;
+            number = Number(prompt("unesite broj"));
+        }
+        console.log(sum);
+        break;
+    case 2:
+        n = prompt("unesite broj ili END ako ste zavrsili");
+        while (n!="END"){
+            n = prompt("unesite broj ili END ako ste zavrsili");
+        }
+        console.log("I am done.");
+        break;
+    case 3:
+        grade = Number(prompt("unesite ocenu"));
+        sredina = 0;
+        k = 0;
+        while (grade > 0 && grade <= 5){
+            sredina += grade;
+            grade = Number(prompt("unesite ocenu"));
+            k++;
+            if (grade===1){
+                console.log("F");
+            }
+            else if (grade===2){
+                console.log("D");
+            }
+            else if (grade===3){
+                console.log("C");
+            }
+            else if (grade===4){
+                console.log("B");
+            }
+            else if (grade===5){
+                console.log("A");
+            }
+            else {
+                console.log("Unosili ste nemoguce ocene");
+            }
+        }
+        sredina /= k;
+        console.log("srednja ocena je",sredina);
+        break;
+}

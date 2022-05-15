@@ -89,49 +89,51 @@
 //     a = "";
 // }
 
-// n = Number(prompt("unesite broj"));
-// k = 0;
-// broj =0;
-// while (k!=n){
-//     if (broj % 2 === 1){
-//         console.log(broj);
-//         k++;
-//     }
-//     broj++;
-// }
+// // n = Number(prompt("unesite broj"));
+// // k = 0;
+// // broj =0;
+// // while (k!=n){
+// //     if (broj % 2 === 1){
+// //         console.log(broj);
+// //         k++;
+// //     }
+// //     broj++;
+// // }
 
-// n = 0;
-// sum = 0;
-// while(n<10){
-//     n++;
-//     sum += n;
-// } 
-// console.log(sum);
+// // n = 0;
+// // sum = 0;
+// // while(n<10){
+// //     n++;
+// //     sum += n;
+// // } 
+// // console.log(sum);
 
 
+// // broj = 0;
+// // while (broj<100){
+// //     broj++;
+// //     if (broj%3 ==0 && broj%5==0){
+// //         console.log("fizzbazz");
+// //     }
+// //     else if (broj % 3 ==0){
+// //         console.log("fizz");
+// //     }
+// //     else if (broj % 5 == 0 ){
+// //         console.log("bazz"); 
+// //     }
+// //     else {
+// //         console.log(broj);
+// //     }
+// // }
+
+
+// n = Number(prompt("unesite broj redova"));
 // broj = 0;
-// while (broj<100){
+// a="";
+// while (broj<n){
+//     a+="*";
+//     console.log(a);
 //     broj++;
-//     if (broj%3 ==0 && broj%5==0){
-//         console.log("fizzbazz");
-//     }
-//     else if (broj % 3 ==0){
-//         console.log("fizz");
-//     }
-//     else if (broj % 5 == 0 ){
-//         console.log("bazz"); 
-//     }
-//     else {
-//         console.log(broj);
-//     }
 // }
 
 
-n = Number(prompt("unesite broj redova"));
-broj = 0;
-a="";
-while (broj<n){
-    a+="*";
-    console.log(a);
-    broj++;
-}
