@@ -271,4 +271,34 @@
 //         console.log("srednja ocena je",sredina);
 //         break;
 // }
+// exit = prompt("unesite operaciju ili exit da izadjete");
+// while (exit!=="exit" || exit!=="EXIT" || exit!=="0"){
+//     a=Number(prompt("unesite prvi broj"))
+//     b=Number(prompt("unesite drugi broj"))
+//     if (exit === "+"){
+//         c = a+b;
+//         console.log(c);
+//     }
+//     exit = prompt("unesite operaciju ili exit da izadjete");
+// }
 
+
+// DOMACI 4
+m = 0;
+for (i=100;i<1000;i++){
+    for (j=100;j<1000;j++){
+        sum = String(i*j);
+        a = sum.charAt(0);
+        b = sum.charAt(1);
+        c = sum.charAt(2);
+        a1 = sum.charAt(sum.length - 1)
+        b1 = sum.charAt(sum.length - 2)
+        c1 = sum.charAt(sum.length - 3)
+        if (a===a1 && b===b1 && c===c1 && Number(sum)>m){
+            m = Number(sum);
+            x = i;
+            z = j;
+        }
+    }
+}
+console.log(m,"dobija se proizvodom",x,"*",z);
