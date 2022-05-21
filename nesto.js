@@ -284,21 +284,144 @@
 
 
 // DOMACI 4
-m = 0;
-for (i=100;i<1000;i++){
-    for (j=100;j<1000;j++){
-        sum = String(i*j);
-        a = sum.charAt(0);
-        b = sum.charAt(1);
-        c = sum.charAt(2);
-        a1 = sum.charAt(sum.length - 1)
-        b1 = sum.charAt(sum.length - 2)
-        c1 = sum.charAt(sum.length - 3)
-        if (a===a1 && b===b1 && c===c1 && Number(sum)>m){
-            m = Number(sum);
-            x = i;
-            z = j;
+// m = 0;
+// for (i=100;i<1000;i++){
+//     for (j=100;j<1000;j++){
+//         sum = String(i*j);
+//         a = sum.charAt(0);
+//         b = sum.charAt(1);
+//         c = sum.charAt(2);
+//         a1 = sum.charAt(sum.length - 1)
+//         b1 = sum.charAt(sum.length - 2)
+//         c1 = sum.charAt(sum.length - 3)
+//         if (a===a1 && b===b1 && c===c1 && Number(sum)>m){
+//             m = Number(sum);
+//             x = i;
+//             z = j;
+//         }
+//     }
+// }
+// console.log(m,"dobija se proizvodom",x,"*",z);
+
+// niz = [1,2,3,4,4,56,3,23];
+// v = Number(prompt("unesi broj"))
+// for (i = 0;i<niz.length-1;i++){
+//     if (v===niz[i]){
+//         console.log("postoji");
+//     }
+//     else {
+//         m = true;
+//     }
+// }
+// if (m === true){
+//     console.log("ne postoji");
+// }
+// niz = [1,2,3,4,5,6,7,8,9,10];
+// niz1 = [];
+// v=Number(prompt("unesite broj"));
+// for (i = 0;i<niz.length;i++){
+//     if (niz[i]===v){
+//         niz.splice(i);
+//     }
+// }
+// console.log(niz);
+
+broj = Number(prompt("unesite broj zadataka"))
+switch(broj){
+    case 10:
+        // 10 ZADATAK
+        niz = [1,2,3,4,5,6,7,8,9,10];
+        max = 0;
+        min = 0;
+        for (i=0;i<niz.length;i++){
+            if(niz[i]>max){
+                max = niz[i];
+            }
         }
-    }
+        min = max;
+        for (i=0;i<niz.length;i++){
+            if (niz[i]<min){
+                min = niz[i];
+            }
+        }
+        console.log(niz);
+        console.log(min);
+        console.log(max);
+        break;
+    case 17:
+        // 17 ZADATAK
+        niz = [1,2,3,4,5,6,7,8,9,10];
+        max = 0;
+        max2 = 0;
+        for (i=0;i<niz.length;i++){
+            if(niz[i]>max){
+                max = niz[i];
+            }
+        }
+        for (i=0;i<niz.length;i++){
+            if (niz[i]>max2 && niz[i]<max){
+                max2 = niz[i];
+            }
+        }
+        console.log(niz);
+        console.log(max2);
+        break;
+    case 23:
+        // 23 ZADATAK
+        a = [1,2,3];
+        b = [1,2,3];
+        m = false;
+        if (a.length === b.length){
+            for (i=0;i<a.length;i++){
+                if (a[i]!==b[i]){
+                    console.log("dati nizovi nisu isti");
+                    break;
+                }
+                else {
+                    m = true;
+                }
+            }
+        }
+        if (m){
+            console.log("dati nizovi jesu isti");
+        }
+    case 28:
+        // 28 ZADATAK
+        niz = [1,2,3,4,5];
+        max = 0;
+        min = 0;
+        for (i=0;i<niz.length;i++){
+            if(niz[i]>max){
+                max = niz[i];
+            }
+        }
+        min = max;
+        for (i=0;i<niz.length;i++){
+            if (niz[i]<min){
+                min = niz[i];
+            }
+        }
+        console.log(max - min);
+        break;
+    case 1:
+        // DARISOV ZADATAK
+        a = [1,2,3,34,5,6,7,8,9]
+        zbirParnih = 0;
+        zbirNeparnih = 0;
+        m = 0;
+        n = 0;
+        for (i = 0 ;i<a.length;i++){
+            if (a[i]%2===0){
+                zbirParnih += a[i];
+                m++;
+            }
+            else {
+                zbirNeparnih += a[i];
+                n++;
+            }
+        }
+        console.log("razlika ",zbirParnih-zbirNeparnih);
+        console.log("neparnih brojeva ima:",n);
+        console.log("parnih brojeva ima",m);
+        break;
 }
-console.log(m,"dobija se proizvodom",x,"*",z);
