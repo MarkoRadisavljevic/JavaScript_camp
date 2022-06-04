@@ -326,102 +326,158 @@
 // }
 // console.log(niz);
 
-broj = Number(prompt("unesite broj zadataka"))
-switch(broj){
-    case 10:
-        // 10 ZADATAK
-        niz = [1,2,3,4,5,6,7,8,9,10];
-        max = 0;
-        min = 0;
-        for (i=0;i<niz.length;i++){
-            if(niz[i]>max){
-                max = niz[i];
-            }
-        }
-        min = max;
-        for (i=0;i<niz.length;i++){
-            if (niz[i]<min){
-                min = niz[i];
-            }
-        }
-        console.log(niz);
-        console.log(min);
-        console.log(max);
-        break;
-    case 17:
-        // 17 ZADATAK
-        niz = [1,2,3,4,5,6,7,8,9,10];
-        max = 0;
-        max2 = 0;
-        for (i=0;i<niz.length;i++){
-            if(niz[i]>max){
-                max = niz[i];
-            }
-        }
-        for (i=0;i<niz.length;i++){
-            if (niz[i]>max2 && niz[i]<max){
-                max2 = niz[i];
-            }
-        }
-        console.log(niz);
-        console.log(max2);
-        break;
-    case 23:
-        // 23 ZADATAK
-        a = [1,2,3];
-        b = [1,2,3];
-        m = false;
-        if (a.length === b.length){
-            for (i=0;i<a.length;i++){
-                if (a[i]!==b[i]){
-                    console.log("dati nizovi nisu isti");
-                    break;
-                }
-                else {
-                    m = true;
-                }
-            }
-        }
-        if (m){
-            console.log("dati nizovi jesu isti");
-        }
-    case 28:
-        // 28 ZADATAK
-        niz = [1,2,3,4,5];
-        max = 0;
-        min = 0;
-        for (i=0;i<niz.length;i++){
-            if(niz[i]>max){
-                max = niz[i];
-            }
-        }
-        min = max;
-        for (i=0;i<niz.length;i++){
-            if (niz[i]<min){
-                min = niz[i];
-            }
-        }
-        console.log(max - min);
-        break;
-    case 1:
-        // DARISOV ZADATAK
-        a = [1,2,3,34,5,6,7,8,9]
-        zbirParnih = 0;
-        zbirNeparnih = 0;
-        m = 0;
-        n = 0;
-        for (i = 0 ;i<a.length;i++){
-            if (a[i]%2===0){
-                zbirParnih += a[i];
-                m++;
-            }
-            else {
-                zbirNeparnih += a[i];
-                n++;
-            }
-        }
-        console.log("razlika ",zbirParnih-zbirNeparnih);
-        console.log("neparnih brojeva ima:",n);
-        console.log("parnih brojeva ima",m);
-        break;
+// broj = Number(prompt("unesite broj zadataka"))
+// switch(broj){
+//     case 10:
+//         // 10 ZADATAK
+//         niz = [1,2,3,4,5,6,7,8,9,10];
+//         max = 0;
+//         min = 0;
+//         for (i=0;i<niz.length;i++){
+//             if(niz[i]>max){
+//                 max = niz[i];
+//             }
+//         }
+//         min = max;
+//         for (i=0;i<niz.length;i++){
+//             if (niz[i]<min){
+//                 min = niz[i];
+//             }
+//         }
+//         console.log(niz);
+//         console.log(min);
+//         console.log(max);
+//         break;
+//     case 17:
+//         // 17 ZADATAK
+//         niz = [1,2,3,4,5,6,7,8,9,10];
+//         max = 0;
+//         max2 = 0;
+//         for (i=0;i<niz.length;i++){
+//             if(niz[i]>max){
+//                 max = niz[i];
+//             }
+//         }
+//         for (i=0;i<niz.length;i++){
+//             if (niz[i]>max2 && niz[i]<max){
+//                 max2 = niz[i];
+//             }
+//         }
+//         console.log(niz);
+//         console.log(max2);
+//         break;
+//     case 23:
+//         // 23 ZADATAK
+//         a = [1,2,3];
+//         b = [1,2,3];
+//         m = false;
+//         if (a.length === b.length){
+//             for (i=0;i<a.length;i++){
+//                 if (a[i]!==b[i]){
+//                     console.log("dati nizovi nisu isti");
+//                     break;
+//                 }
+//                 else {
+//                     m = true;
+//                 }
+//             }
+//         }
+//         if (m){
+//             console.log("dati nizovi jesu isti");
+//         }
+//     case 28:
+//         // 28 ZADATAK
+//         niz = [1,2,3,4,5];
+//         max = 0;
+//         min = 0;
+//         for (i=0;i<niz.length;i++){
+//             if(niz[i]>max){
+//                 max = niz[i];
+//             }
+//         }
+//         min = max;
+//         for (i=0;i<niz.length;i++){
+//             if (niz[i]<min){
+//                 min = niz[i];
+//             }
+//         }
+//         console.log(max - min);
+//         break;
+//     case 1:
+//         // DARISOV ZADATAK
+//         a = [1,2,3,34,5,6,7,8,9]
+//         zbirParnih = 0;
+//         zbirNeparnih = 0;
+//         m = 0;
+//         n = 0;
+//         for (i = 0 ;i<a.length;i++){
+//             if (a[i]%2===0){
+//                 zbirParnih += a[i];
+//                 m++;
+//             }
+//             else {
+//                 zbirNeparnih += a[i];
+//                 n++;
+//             }
+//         }
+//         console.log("razlika ",zbirParnih-zbirNeparnih);
+//         console.log("neparnih brojeva ima:",n);
+//         console.log("parnih brojeva ima",m);
+//         break;
+// }
+niz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+];
+sum = 0;
+a = "";
+b ="";
+for (i = 0;i<niz.length;i++){
+    for (j = 0;j<niz.length;j++){
+        sum += niz[j][i];
+    }
+    a +=sum+" ";
+    sum = 0;
 }
+for (i = 0;i<niz.length;i++){
+    for (j = 0;j<niz.length;j++){
+        b += niz[i][j] + "  ";
+    }
+    console.log(b);
+    b = "";
+}
+console.log(a);
+console.log("---------");
+
+a = "";
+for (i = 0;i<niz.length;i++){
+    for (j = 0;j<niz.length;j++){
+        if (i===j){
+            a += niz[i][j] + " ";
+        }
+        else 
+        {
+            a += "  ";
+        }
+    }
+    console.log(a);
+    a = "";
+}
+console.log("---------");
+a = "";
+for (i = 0;i<niz.length;i++){
+    for (j = 0;j<niz.length;j++){
+        if (i+j===niz.length-1){
+            a += niz[i][j] + " ";
+        }
+        else 
+        {
+            a += "  ";
+        }
+    }
+    console.log(a);
+    a = "";
+}
+
+console.log(([][[]]+[])[!+[]+!+[]]+(+(!+[]+!+[]+!+[]+[!+[]+!+[]+!+[]+!+[]+!+[]]))[(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([]+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]][([][[]]+[])[+!+[]]+(![]+[])[+!+[]]+((+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]+[])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]]](!+[]+!+[]+!+[]+[!+[]+!+[]+!+[]+!+[]+!+[]+!+[]])+(!![]+[])[!+[]+!+[]+!+[]]+((+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]+[])[+!+[]+[+!+[]]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]);

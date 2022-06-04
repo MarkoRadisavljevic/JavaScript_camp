@@ -230,3 +230,4 @@
 // console.log("razlika ",zbirParnih-zbirNeparnih);
 // console.log("neparnih brojeva ima:",n);
 // console.log("parnih brojeva ima",m);
+
