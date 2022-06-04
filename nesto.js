@@ -479,3 +479,4 @@ for (i = 0;i<niz.length;i++){
     console.log(a);
     a = "";
 }
+console.log(+!![] + +!![]);
