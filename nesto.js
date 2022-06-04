@@ -448,7 +448,7 @@ for (i = 0;i<niz.length;i++){
     b = "";
 }
 console.log(a);
-console.log("---------");
+console.log("---------------------------------------------------------------");
 
 a = "";
 for (i = 0;i<niz.length;i++){
@@ -464,7 +464,7 @@ for (i = 0;i<niz.length;i++){
     console.log(a);
     a = "";
 }
-console.log("---------");
+console.log("---------------------------------------------------------------");
 a = "";
 for (i = 0;i<niz.length;i++){
     for (j = 0;j<niz.length;j++){
