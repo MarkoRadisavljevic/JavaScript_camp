@@ -425,58 +425,98 @@
 //         console.log("parnih brojeva ima",m);
 //         break;
 // }
-niz = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-];
-sum = 0;
-a = "";
-b ="";
-for (i = 0;i<niz.length;i++){
-    for (j = 0;j<niz.length;j++){
-        sum += niz[j][i];
-    }
-    a +=sum+" ";
-    sum = 0;
-}
-for (i = 0;i<niz.length;i++){
-    for (j = 0;j<niz.length;j++){
-        b += niz[i][j] + "  ";
-    }
-    console.log(b);
-    b = "";
-}
-console.log(a);
-console.log("---------------------------------------------------------------");
+// niz = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+// ];
+// sum = 0;
+// a = "";
+// b ="";
+// for (i = 0;i<niz.length;i++){
+//     for (j = 0;j<niz.length;j++){
+//         sum += niz[j][i];
+//     }
+//     a +=sum+" ";
+//     sum = 0;
+// }
+// for (i = 0;i<niz.length;i++){
+//     for (j = 0;j<niz.length;j++){
+//         b += niz[i][j] + "  ";
+//     }
+//     console.log(b);
+//     b = "";
+// }
+// console.log(a);
+// console.log("---------------------------------------------------------------");
 
-a = "";
-for (i = 0;i<niz.length;i++){
-    for (j = 0;j<niz.length;j++){
-        if (i===j){
-            a += niz[i][j] + " ";
-        }
-        else 
-        {
-            a += "  ";
-        }
-    }
-    console.log(a);
-    a = "";
-}
-console.log("---------------------------------------------------------------");
-a = "";
-for (i = 0;i<niz.length;i++){
-    for (j = 0;j<niz.length;j++){
-        if (i+j===niz.length-1){
-            a += niz[i][j] + " ";
-        }
-        else 
-        {
-            a += "  ";
-        }
-    }
-    console.log(a);
-    a = "";
-}
-console.log(+!![] + +!![]);
+// a = "";
+// for (i = 0;i<niz.length;i++){
+//     for (j = 0;j<niz.length;j++){
+//         if (i===j){
+//             a += niz[i][j] + " ";
+//         }
+//         else 
+//         {
+//             a += "  ";
+//         }
+//     }
+//     console.log(a);
+//     a = "";
+// }
+// console.log("---------------------------------------------------------------");
+// a = "";
+// for (i = 0;i<niz.length;i++){
+//     for (j = 0;j<niz.length;j++){
+//         if (i+j===niz.length-1){
+//             a += niz[i][j] + " ";
+//         }
+//         else 
+//         {
+//             a += "  ";
+//         }
+//     }
+//     console.log(a);
+//     a = "";
+// }
+// console.log(+!![] + +!![]);
+
+
+// niz = [1,2,3,4,5,6,7,8,9,10];
+// niz2  =  niz.map((x) => x*2);
+// console.log(niz);
+// console.log(niz2);
+// niz.filter((x) => x%2===0);
+// niz.array.forEach(element => { });
+// niz.sum
+// niz.every
+// niz.reduce
+// niz.map
+// niz.filter
+// niz.sort
+// niz.forEach
+
+// nums = [-2,1,-3,4,-1,2,1,-5,4];
+// maxSuma = Infinity;
+// trnutna = 0;
+// for (i = 0;i<nums.length;i++){
+//     trnutna = Math.max(nums[i],trnutna + nums[i]);
+//     maxSuma = Math.max(maxSuma,trnutna);
+// }
+// console.log(maxSuma);
+
+// strs = ["flower","flow","flight"];
+// prefix = strs[0];
+// for (i=0;i<strs.length;i++){
+//     p = "";
+//     for (j=0;j<strs[i].length;j++){
+//         if (prefix[j]!==strs[i][j]){
+//             break;
+//         }
+//         p += prefix[j];
+//     }
+//     prefix = p;
+// }
+// console.log(prefix);
+
+
