@@ -625,7 +625,7 @@
 // proizvod = 1;
 // maxProizvodHorizontalno = 0;
 // for (i=0;i<matrica.length;i++){
-//     for (j=0;j<matrica[i].length-4;j++){
+//     for (j=0;j<matrica[i].length-3;j++){
 //         proizvod = 1;
 //         for (z=0;z<4;z++){
 //             proizvod *= matrica[i][j+z];
@@ -637,7 +637,7 @@
 // }
 // proizvod = 1;
 // for (i=0;i<matrica.length;i++){
-//     for (j=0;j<matrica[i].length-4;j++){
+//     for (j=0;j<matrica[i].length-3;j++){
 //         proizvod = 1;
 //         for (z=0;z<4;z++){
 //             proizvod *= matrica[j+z][i];
@@ -648,8 +648,8 @@
 //     }
 // }
 // proizvod = 1;
-// for (i=0;i<matrica.length-4;i++){
-//     for (j=0;j<matrica[i].length-4;j++){
+// for (i=0;i<matrica.length-3;i++){
+//     for (j=0;j<matrica[i].length-3;j++){
 //         proizvod = 1;
 //         for (z=0;z<4;z++){
 //             proizvod *= matrica[i+z][j+z];
@@ -660,8 +660,8 @@
 //     }
 // }
 // proizvod = 1;
-// for (i=0;i<matrica.length-4;i++){
-//     for (j=3;j<matrica[i].length-4;j++){
+// for (i=0;i<matrica.length-3;i++){
+//     for (j=3;j<matrica[i].length-3;j++){
 //         proizvod = 1;
 //         for (z=0;z<4;z++){
 //             proizvod *= matrica[j-z][i+z];
@@ -701,19 +701,19 @@
 // console.log(person)
 // console.log(person2)
 
-class Car {
-    constructor(n,y, c) {
-        this.color = c
-      this.name = n
-      this.year = y
-      this.age = 2022 - y
-    }
-}
+// class Car {
+//     constructor(n,y, c) {
+//         this.color = c
+//       this.name = n
+//       this.year = y
+//       this.age = 2022 - y
+//     }
+// }
   
 
 
-const myCar = new Car('FORD', 1969, 'red');
-car2 = {...myCar}
-console.log(car2);
-console.log(myCar);
+// const myCar = new Car('FORD', 1969, 'red');
+// car2 = {...myCar}
+// console.log(car2);
+// console.log(myCar);
 
