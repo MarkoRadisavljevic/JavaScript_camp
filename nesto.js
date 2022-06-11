@@ -674,29 +674,46 @@
 // console.log(maxProizvodHorizontalno);
 
 
+// let car = new Object();
+// car.make = "Ford";
+// car.model = "Mustang";
+// car.year = 1969;
+// car.color = "red";
+// console.log(car);
+
+
+// let person = {
+//     name: "Marko",
+//     age: 15 
+// }
+
+// console.log(person);
+// console.log(person.name);
+
+
+// console.log({} === {})
 
 
 
-let person = {
-    name: "Marko",
-    age: 15 
+// let person2 = person
+// person2.name = "Jana"
+
+// console.log(person)
+// console.log(person2)
+
+class Car {
+    constructor(n,y, c) {
+        this.color = c
+      this.name = n
+      this.year = y
+      this.age = 2022 - y
+    }
 }
-
-console.log(person);
-console.log(person.name);
+  
 
 
-console.log({} === {})
-
-
-
-let person2 = person
-person2.name = "Jana"
-
-console.log(person)
-console.log(person2)
-
-
-
-
+const myCar = new Car('FORD', 1969, 'red');
+car2 = {...myCar}
+console.log(car2);
+console.log(myCar);
 
