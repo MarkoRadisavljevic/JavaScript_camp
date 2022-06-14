@@ -728,12 +728,12 @@
 // nazivFunkcije("Marko");
 
 
-function reverceNum(number){
-    number = String(number);
-    x="";
-    for (i=number.length-1;i>=0;i--){
-        x+=number[i];
-    }
-    return x;
-}
-console.log(reverceNum(32243));
+// function reverceNum(number){
+//     number = String(number);
+//     x="";
+//     for (i=number.length-1;i>=0;i--){
+//         x+=number[i];
+//     }
+//     return x;
+// }
+// console.log(reverceNum(32243));
