@@ -635,6 +635,7 @@
 //         }
 //     }
 // }
+// console.log(maxProizvodHorizontalno);
 // proizvod = 1;
 // for (i=0;i<matrica.length;i++){
 //     for (j=0;j<matrica[i].length-3;j++){
@@ -647,6 +648,7 @@
 //         }
 //     }
 // }
+// console.log(maxProizvodHorizontalno);
 // proizvod = 1;
 // for (i=0;i<matrica.length-3;i++){
 //     for (j=0;j<matrica[i].length-3;j++){
@@ -659,6 +661,7 @@
 //         }
 //     }
 // }
+// console.log(maxProizvodHorizontalno);
 // proizvod = 1;
 // for (i=0;i<matrica.length-3;i++){
 //     for (j=3;j<matrica[i].length-3;j++){
@@ -717,3 +720,20 @@
 // console.log(car2);
 // console.log(myCar);
 
+
+
+// function nazivFunkcije(parametar) {
+//     console.log(parametar);
+// }
+// nazivFunkcije("Marko");
+
+
+function reverceNum(number){
+    number = String(number);
+    x="";
+    for (i=number.length-1;i>=0;i--){
+        x+=number[i];
+    }
+    return x;
+}
+console.log(reverceNum(32243));
