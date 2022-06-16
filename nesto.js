@@ -741,21 +741,21 @@
 
 // DOMACI FUNKCIJE
 
-function isPalindrom(str){
-    str = str.toUpperCase();
-    for (let i = 0; i < str.length/2; i++) {
-        if (str[i]===str[str.length-1-i]){
-            check = "dati string jeste palindrom";
-        }
-        else {
-            check = "dati string nije palindrom";
-            break;
-        }
-    }
-    return check;
-}
+// function isPalindrom(str){
+//     str = str.toUpperCase();
+//     for (let i = 0; i < str.length/2; i++) {
+//         if (str[i]===str[str.length-1-i]){
+//             check = "dati string jeste palindrom";
+//         }
+//         else {
+//             check = "dati string nije palindrom";
+//             break;
+//         }
+//     }
+//     return check;
+// }
+// console.log(isPalindrom("1234321"));
 
-console.log(isPalindrom("1234321"));
 
 // function firstLetter(str){
 //     niz = str.split(" ");
@@ -768,6 +768,8 @@ console.log(isPalindrom("1234321"));
 //     return a;
 // }
 // console.log(firstLetter("ndf auibs uiebaksf"));
+
+
 
 // function nzm(str){
 //     a = "";
@@ -784,3 +786,4 @@ console.log(isPalindrom("1234321"));
 //     console.log(a);
 // }
 // nzm("df sedf asf");
+
