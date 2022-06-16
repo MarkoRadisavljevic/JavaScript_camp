@@ -783,4 +783,4 @@ console.log(isPalindrom("1234321"));
 //     }
 //     console.log(a);
 // }
-// nzm("df sedf asf")
+// nzm("df sedf asf");
