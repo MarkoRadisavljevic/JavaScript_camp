@@ -612,7 +612,7 @@
 // 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 // 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48`;
 // matrica = brojevi.split("\n");
-
+// console.log(matrica);
 // matrica = matrica.map((red) => {
 //     return red.split(" ");
 // })
@@ -620,7 +620,7 @@
 //     for (j = 0;j<matrica[i].length;j++){
 //         matrica[i][j] = Number(matrica[i][j]);
 //     }
-// }
+// }    
 // console.log(matrica);
 // proizvod = 1;
 // maxProizvodHorizontalno = 0;
@@ -737,3 +737,50 @@
 //     return x;
 // }
 // console.log(reverceNum(32243));
+
+
+// DOMACI FUNKCIJE
+
+// function isPalindrom(str){
+//     str = str.toUpperCase();
+//     for (let i = 0; i < str.length/2; i++) {
+//         if (str[i]===str[str.length-1-i]){
+//             check = "dati string jeste palindrom";
+//         }
+//         else {
+//             check = "dati string nije palindrom";
+//             break;
+//         }
+//     }
+//     return check;
+// }
+
+// console.log(isPalindrom("Ana"));
+
+// function firstLetter(str){
+//     niz = str.split(" ");
+//     a = "";
+//     for (let i = 0; i < niz.length; i++) {
+//         m = niz[i].slice(1)
+//         niz[i]=niz[i][0].toUpperCase();
+//         a += niz[i]+m+" ";
+//     }
+//     return a;
+// }
+// console.log(firstLetter("ndf auibs uiebaksf"));
+
+// function nzm(str){
+//     a = "";
+//     matrica =  str.split(" ").map((el) => {
+//         return el.split("");
+//     })
+//     for (let i = 0; i < matrica.length; i++) {
+//         for (let j = 0; j < matrica[i].length; j++) {
+//             matrica[i][0] = matrica[i][0].toUpperCase();
+//             a += matrica[i][j];
+//         }
+//         a+=" ";
+//     }
+//     console.log(a);
+// }
+// nzm("df sedf asf")
