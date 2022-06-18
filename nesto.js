@@ -823,7 +823,7 @@
 // console.log(faktorijal(n));
 
 
-// 14 zadatak
+// // 14 zadatak
 // function amountTocoins(amount, coins) {
 //     coins = coins.sort(function(a, b){return b-a});
 //     niz = [];
