@@ -771,19 +771,99 @@
 
 
 
-function nzm(str){
-    a = "";
-    matrica =  str.split(" ").map((el) => {
-        return el.split("");
-    })
-    for (let i = 0; i < matrica.length; i++) {
-        for (let j = 0; j < matrica[i].length; j++) {
-            matrica[i][0] = matrica[i][0].toUpperCase();
-            a += matrica[i][j];
-        }
-        a+=" ";
-    }
-    console.log(a);
-}
-nzm("df sedf asf");
+// function nzm(str){
+//     a = "";
+//     matrica =  str.split(" ").map((el) => {
+//         return el.split("");
+//     })
+//     for (let i = 0; i < matrica.length; i++) {
+//         for (let j = 0; j < matrica[i].length; j++) {
+//             matrica[i][0] = matrica[i][0].toUpperCase();
+//             a += matrica[i][j];
+//         }
+//         a+=" ";
+//     }
+//     console.log(a);
+// }
+// nzm("df sedf asf");
 
+
+
+
+// domaci 12,13,14
+
+// 12 ZADATAK
+// n = 28;
+// function perfectNumber(num){
+//     sum = 0;
+//     for (let i = 1; i <= n; i++) {
+//         if (n%i===0){
+//             sum += i;
+//         }
+//     }
+//     return sum/2===n;
+// }
+// if (perfectNumber(n)){
+//     console.log("broj je savrsen");
+// }
+// else {
+//     console.log("broj nije savrsen");
+// }
+
+
+// 13 ZADATAK
+// n = 2;
+// function faktorijal(num){
+//     fak = 1;
+//     for (i=num;i>0;i--){
+//         fak *= i;
+//     }
+//     return fak;
+// }
+// console.log(faktorijal(n));
+
+
+// 14 zadatak
+// function amountTocoins(amount, coins) {
+//     coins = coins.sort(function(a, b){return b-a});
+//     niz = [];
+//     sum = 0;
+//     for (i=0;i<coins.length;i++){
+//         while (amount>=sum){
+//             if (sum + coins[i]>amount){
+//                 break;
+//             }
+//             else {
+//                 sum += coins[i];
+//                 niz.push(coins[i])
+//             }
+//         }
+//     }
+//     return niz;
+// } 
+// console.log(amountTocoins(46, [25, 10, 5, 2, 1]));
+
+// 16
+
+// str = "qweer"
+// function execute(a) {
+//     a = a.split("");
+//     b = "";
+//     for (i=0;i<a.length;i++){
+//         if (i===a.length-1)
+//         {
+//             niz = a.slice(0,i)
+//         }
+//         else if (i===0){
+//             niz = a.slice(1);
+//         }
+//         else {
+//             niz = a.slice(0,i).concat(a.slice(i+1))
+//         }
+//         if (!niz.includes(a[i])){
+//             b += a[i];
+//         }
+//     }
+//     return b;
+// }
+// console.log(execute(str));
