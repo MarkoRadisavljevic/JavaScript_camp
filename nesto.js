@@ -871,3 +871,23 @@
 
 
 
+function apoensCalc(amount, apoens) {
+    i = 0;
+  
+    money = [];
+  
+    while (amount > 0) {
+      if (amount - apoens[i] >= 0) {
+        amount -= apoens[i];
+        money.push(apoens[i]);
+      } else {
+        i++;
+      }
+    }
+    return money;
+  }
+  
+  arg1 = [25, 10, 5, 2, 1];
+  arg2 = 174;
+  
+  console.log(apoensCalc(arg2, arg1));
