@@ -870,24 +870,46 @@
 
 
 
+// function apoensCalc(amount, apoens) {
+//     i = 0;
+  
+//     money = [];
+  
+//     while (amount > 0) {
+//       if (amount - apoens[i] >= 0) {
+//         amount -= apoens[i];
+//         money.push(apoens[i]);
+//       } else {
+//         i++;
+//       }
+//     }
+//     return money;
+//   }
+  
+//   arg1 = [25, 10, 5, 2, 1];
+//   arg2 = 174;
+  
+//   console.log(apoensCalc(arg2, arg1));
 
-function apoensCalc(amount, apoens) {
-    i = 0;
-  
-    money = [];
-  
-    while (amount > 0) {
-      if (amount - apoens[i] >= 0) {
-        amount -= apoens[i];
-        money.push(apoens[i]);
-      } else {
-        i++;
-      }
-    }
-    return money;
-  }
-  
-  arg1 = [25, 10, 5, 2, 1];
-  arg2 = 174;
-  
-  console.log(apoensCalc(arg2, arg1));
+
+
+
+// class Car {
+//     constructor(n,age){
+//         this.name = n;
+//         this.age = age;
+//     }
+//     printname(){
+//         console.log(this.name);
+//     }
+//     countage(year){
+//         console.log(year - this.age);
+//     }
+// }
+// c = new Car("Fiat",2008);
+// console.log(c);
+// c.printname();
+// c.countage(2022)
+
+
+
