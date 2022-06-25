@@ -929,3 +929,26 @@
 
 
 
+// setTimeout(() => {}, 1000);
+
+// posao = new Promise((resolve,reject) => {
+//     let status = 200;
+//     for (i=0;i<201;i++){
+//         if (status === 200){
+//             resolve();
+//         }
+//         else {
+//             reject();
+//         }
+//     }
+// })
+
+// posao 
+//     .then(() => {
+//         console.log("uspesno");
+//     })
+//     .catch(() => {
+//         console.log("error");
+//     })
+
+
