@@ -912,4 +912,20 @@
 // c.countage(2022)
 
 
+// class Radnik{
+//     constructor(name,surname,workPlace,workHours,n){
+//         this.name = name;
+//         this.surname = surname;
+//         this.workPlace = workPlace;
+//         this.workHours = workHours;
+//         this.n = n;
+//     }
+//     isplata (){
+//         console.log((this.workPlace*this.n)*30);
+//     }
+// }
+// radnik1 = new Radnik("Marko","Radisavljevic","NIT",3,200)
+// isplata()
+
+
 
